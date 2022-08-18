@@ -41,7 +41,6 @@ def retrieve_org_members():
 
 #Create CSV from data returned in API requests
 def generate_csv(final_data,file_name):
-    print(final_data)
     exportdata = []
     csvheader = ['Active', 'User Email', 'User ID', 'Last Activity', 'License', 'License Assigned At', 'Role']
     for x in final_data:
